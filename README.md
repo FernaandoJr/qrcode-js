@@ -1,7 +1,7 @@
 # QR Code Generator in JavaScript
 
 ## 💻 About the Repository
-Welcome to the QR Code Generator repository! This project provides a simple and customizable QR code generator implemented in JavaScript. Users can easily input their desired content and customize various aspects of the QR code, including size (up to 1000px), color scheme, margin, and file type (PNG or SVG).
+Welcome to the QR Code Generator repository! This project provides a simple and customizable QR code generator implemented in JavaScript using the [QR Code API](https://goqr.me/api/doc/). Users can easily input their desired content and customize various aspects of the QR code, including size (up to 1000px), color scheme, margin, and file type (PNG or SVG).
 
 ### Key Features
 - **User-Friendly Interface:** The generator allows users to input their content and customize QR code settings with ease.
@@ -17,6 +17,11 @@ This repository utilizes the following technologies:
 - **JavaScript**
 
 Feel free to explore the codebase and understand how these technologies work together to create a functional QR code generator.
+
+<hr/>
+
+## 📖 Reference
+All information about the JavaScript API was sourced from this easy-to-understand and comprehensive article. Make sure to check it out to understand how simple and easy it is to create a QR code using the [QR Code API](https://goqr.me/api/doc/).
 
 <hr/>
 
