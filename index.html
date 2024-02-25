@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="shortcut icon" href="./svg/icon.svg" type="image/x-icon" />
+    <title>Gerador de QR Code</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <p class="title">Digite um texto ou URL</p>
+        <input
+          class="input"
+          name="text"
+          placeholder="Digite seu texto ou URL..."
+          type="search"
+          id="user-input"
+        />
+        <p class="size">Tamanho:</p>
+        <select name="tamanho" id="tamanho">
+          <option value="100">100x100</option>
+          <option value="200">200x200</option>
+          <option value="300">300x300</option>
+          <option value="400">400x400</option>
+          <option value="500">500x500</option>
+          <option value="600">600x600</option>
+          <option value="700">700x700</option>
+          <option value="800">800x800</option>
+          <option value="900">900x900</option>
+          <option value="1000">1000x1000</option>
+        </select>
+        <p class="color">Cores:</p>
+        <div class="cores-div">
+          <input
+            class="color"
+            type="color"
+            name="color"
+            id="color"
+            value="#000000"
+          />
+          <input
+            class="bg-color"
+            type="color"
+            name="bg-color"
+            id="bg-color"
+            value="#ffffff"
+          />
+        </div>
+        <p class="margin">Margem:</p>
+        <input
+          id="qzone"
+          type="range"
+          value="1"
+          min="0"
+          max="100"
+          oninput="this.nextElementSibling.value = this.value"
+        />
+        <output>1</output>
+        <p class="type">Tipo:</p>
+        <select name="tipo" id="tipo">
+          <option value="png">Png</option>
+          <option value="svg">Svg</option>
+        </select>
+        <div class="img-container">
+          <img src="" id="qrcode" />
+        </div>
+        <div class="btn">
+          <button class="download" onclick="gerarCodigo()">Gerar</button>
+        </div>
+      </div>
+      <script src="./js/gerador.js"></script>
+    </div>
+  </body>
+</html>

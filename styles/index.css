@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #0d0d0d;
+}
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  justify-content: center;
+  border-radius: 9px;
+  padding: 1rem;
+  width: 400px;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#user-input {
+  width: 150px;
+  border-radius: 8px;
+  padding: 0.35rem;
+}
+
+.container .size {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+p.color {
+  font-weight: bold;
+}
+
+p.margin {
+  font-weight: bold;
+}
+
+output {
+  font-weight: bold;
+}
+
+p.type {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+select#tipo {
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1a1a1a;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  aspect-ratio: 1;
+  max-width: 300px;
+}
+
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    overflow: hidden;
+  }
+  #user-input {
+    width: 250px;
+  }
+  img {
+    max-width: 100px;
+  }
+}
